@@ -126,6 +126,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -141,8 +142,6 @@ body {
 /*===HEADER===*/
 
 .header {
-    /*padding-top: 24px;
-    padding-bottom: 24px;*/
     border-bottom: 1px solid var(--accent);
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08)
 }
@@ -187,7 +186,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark);
-    padding: 24px 0
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -206,6 +206,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*===/HEADER===*/
@@ -254,7 +255,8 @@ body {
     padding: 16px 32px;
     border: none;
     margin-left: auto;    
-    margin-right: auto;   
+    margin-right: auto; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-btn:hover,
@@ -368,6 +370,8 @@ body {
     gap: 24px;
 }
 
+
+
 .social-list-team-link:hover,
 .social-list-team-link:focus {
     background-color: var(--pressed-state);
@@ -396,6 +400,7 @@ body {
     border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--subtle-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         
 }
 
@@ -500,6 +505,7 @@ body {
     align-items: center;
     padding: 12px 24px;
     border: 1px solid var(--accent);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -522,7 +528,8 @@ body {
 }
 
 .examples-list-link {
-    display: block; 
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-list-link:hover,
@@ -530,10 +537,6 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.examples-list-link:hover .overlay,
-.examples-list-link:focus .overlay {
-    transform: translate(0, 0);
-}
 
 .portfolio-div-overlay {
     position: relative;
@@ -559,6 +562,11 @@ body {
     padding: 40px 32px;
     
     
+}
+
+.examples-list-link:hover .overlay,
+.examples-list-link:focus .overlay {
+    transform: translate(0, 0);
 }
 
 .portfolio-div-text {
